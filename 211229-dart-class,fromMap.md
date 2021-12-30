@@ -11,7 +11,7 @@ class People{
         int age,
     ) : this.age = age;
     void printName(){
-        print('저는 $this.name 입니다.');
+        print('저는 ${this.name} 입니다.');
     }
 }
 ```
