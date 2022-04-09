@@ -37,3 +37,30 @@ void main(){
     print(num is! String)   //true
 }
 ```
+
+<br><br>
+
+- 논리 operator
+> a && b 연산자 : a 와 b둘다 true이면 true <br>
+> a || b 연산자 : a 또는 b 둘 중 하나가 true이면 true <br>
+```
+void main(){
+    bool result = 12 > 10;  //true
+    
+    bool result2 = 12 > 10 && 1 > 0;
+    print(result2); //true
+    
+    bool result3 = 12 > 10 && 0 > 1;
+    print(result3); //false
+    
+    bool result4 = 12 > 10 || 1 > 0;
+    print(result4); //true
+    
+    //둘중 하나라도 true이면 true
+    bool result5 = 12 > 10 || 0 > 1;
+    print(result5); //true
+    
+    bool result6 = 12 < 10 || 0 > 1;
+    print(result6); //false
+}
+```
